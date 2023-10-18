@@ -1,23 +1,22 @@
 <div class="form-container">
-    <h2>Formulaire Angular</h2>
-    <form (ngSubmit)="submitForm()">
-      <div class="form-group">
-        <label for="nom">Nom:</label>
-        <input type="text" id="nom" [(ngModel)]="Nom" name="Nom" required class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="prenom">Prénom:</label>
-        <input type="text" id="prenom" [(ngModel)]="Prenom" name="Prenom" required class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" [(ngModel)]="Email" name="Email" required class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" [(ngModel)]="message" name="message" required class="form-control"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Envoyer</button>
-    </form>
-  </div>
-  
+  <h2>Laisser un message</h2>
+  <form (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="nom">Nom:</label>
+      <input type="text" id="nom" [(ngModel)]="Nom" placeholder="Nom" required class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="prenom">Prénom:</label>
+      <input type="text" id="prenom" [(ngModel)]="Prenom"  required class="form-control" placeholder="Prénom">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="Email" required class="form-control" placeholder="email">
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" [(ngModel)]="message" placeholder="Message" required class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+</div>

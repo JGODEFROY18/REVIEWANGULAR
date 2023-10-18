@@ -1,57 +1,73 @@
-/* Ajoutez des styles Bootstrap ici pour styliser votre formulaire */
-
-/* Style pour le formulaire */
 .form-container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-  }
-  
-  /* Style pour les étiquettes des champs */
-  label {
-    font-weight: bold;
-  }
-  
-  /* Style pour les champs de formulaire */
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-  }
-  
-  /* Style pour le bouton Envoyer */
-  button[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Style pour les messages d'erreur */
-  .error-message {
-    color: #dc3545;
-    font-size: 0.875rem;
-    margin-top: 5px;
-  }
-  
-  /* Style pour les messages de succès */
-  .success-message {
-    color: #28a745;
-    font-size: 0.875rem;
-    margin-top: 5px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ // background: linear-gradient(45deg, rgba(0,50,50,50%) 0%, rgba(0, 80, 0,50%) 100%);
+  background: url("https://www.isagri.fr/hs-fs/hubfs/ISAGRI/site_isagri_fr/headers/bandeau_haut_home.jpg?width=1600&name=bandeau_haut_home.jpg");
+  border-radius: 5px;
+  width: fit-content;
+  padding: 30px;
+  margin: 10px;
+
+}
+
+.form-container:before{
+  background: rgba(50,50,50,50%);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-shadow: rgba(0,200,0,50%) 2px 2px 2px;
+}
+
+.form-group {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#message {
+  min-width: 400px;
+  min-height: 400px;
+}
+
+label {
+  display: flex;
+  align-content: center;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-top: 10px;
+  text-align: center;
+  min-width: 100px;
+
+}
+
+input,
+textarea {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  border-radius: 20px;
+}
