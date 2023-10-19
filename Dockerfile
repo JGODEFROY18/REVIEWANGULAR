@@ -12,7 +12,7 @@ COPY package-lock.json ./
 RUN npm install 
 
 # Utilisez la configuration du port 8080 de votre application Angular
-EXPOSE 8080:4200
+EXPOSE 9323:8080
 
 # Copier le reste des fichiers du projet
 COPY .angular ./angular
@@ -30,6 +30,9 @@ COPY tsconfig.app.json ./tsconfig.app.json
 COPY playwright.config.ts ./playwright.config.ts
 COPY README.md ./README.md
 COPY src/ /app/src/
+COPY tests ./tests
 
 # Commande d'exécution par défaut (peut être modifiée)
-CMD ["npx", "playwright", "test", "--ui"]
+#CMD ["npx", "playwright", "test", "--ui"]
+CMD npx playwright test
+#CMD ls src/*
